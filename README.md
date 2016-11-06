@@ -1,4 +1,4 @@
-# Instant2fa
+# Instant2FA
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/instant2fa`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -21,6 +21,19 @@ Or install it yourself as:
     $ gem install instant2fa
 
 ## Usage
+
+```ruby
+Instant2FA.configure do |config|
+  config.access_key = 'YOUR_ACCESS_KEY'
+  config.access_secret = 'YOUR_ACCESS_SECRET'
+end
+
+distinct_id = "A_UNIQUE_ID_FOR_A_USER"
+
+hosted_page_url = Instant2FA.create_settings(distinct_id)
+hosted_page_url = Instant2FA.create_verification(distinct_id)
+verification_succeeded = Instant2FA.confirm_verification(distinct_id, token)
+```
 
 TODO: Write usage instructions here
 
