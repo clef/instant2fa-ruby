@@ -18,7 +18,7 @@ module Instant2FA
         # hack because it currently doesn't raise for 422
         connection.use Middleware::UnprocessableEntityStatus
         connection.use FaradayMiddleware::FollowRedirects
-        connection.faraday.basic_auth(@config.access_key, @config.access_secret)
+        connection.use Faraday::Request::BasicAuthentication, @config.access_key, @config.access_secret
       end
     end
 
