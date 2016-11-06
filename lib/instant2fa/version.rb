@@ -1,3 +1,3 @@
-module Instant2fa
-  VERSION = "0.1.0"
+module Instant2FA
+  VERSION = "0.0.1"
 end
