@@ -16,7 +16,7 @@ module Instant2FA
     @config ||= Configuration.new
   end
 
-  def new(config=Clef.config.dup, options={})
+  def new(config=Instant2FA.config.dup, options={})
     Client.new(config, options)
   end
 

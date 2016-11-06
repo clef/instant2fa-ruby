@@ -10,7 +10,7 @@ module Instant2FA
 
     attr_accessor :config
 
-    def initialize(config=Clef.config.dup, options={})
+    def initialize(config=Instant2FA.config.dup, options={})
       @config = config
 
       Resources::Base.site = @config.api_base
