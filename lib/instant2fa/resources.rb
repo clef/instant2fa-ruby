@@ -21,7 +21,6 @@ module Instant2FA
 
       def self.path(params)
         previous = super(params)
-        p previous
         previous + "/"
       end
 
