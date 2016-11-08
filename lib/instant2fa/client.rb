@@ -5,12 +5,12 @@ require 'instant2fa/resources'
 require 'instant2fa/errors'
 require 'instant2fa/middleware/unprocessable_entity_status'
 
-module Instant2FA
+module Instant2fa
   class Client
 
     attr_accessor :config
 
-    def initialize(config=Instant2FA.config.dup, options={})
+    def initialize(config=Instant2fa.config.dup, options={})
       @config = config
 
       Resources::Base.site = @config.api_base

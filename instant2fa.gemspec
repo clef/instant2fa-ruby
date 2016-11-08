@@ -5,7 +5,7 @@ require 'instant2fa/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "instant2fa"
-  spec.version       = Instant2FA::VERSION
+  spec.version       = Instant2fa::VERSION
   spec.authors       = ["Jesse Pollak"]
   spec.email         = ["jesse@instant2fa.com"]
 

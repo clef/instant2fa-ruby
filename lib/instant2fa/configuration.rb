@@ -1,6 +1,6 @@
 require "instant2fa/resources"
 
-module Instant2FA
+module Instant2fa
   class Configuration
     attr_accessor :access_key
     attr_accessor :access_secret

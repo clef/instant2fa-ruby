@@ -1,18 +1,18 @@
-module Instant2FA
+module Instant2fa
   module Errors
-    class Instant2FAError < StandardError
+    class Instant2faError < StandardError
     end
 
-    class MFANotEnabled < Instant2FAError
+    class MFANotEnabled < Instant2faError
     end
 
-    class ValidationError < Instant2FAError
+    class ValidationError < Instant2faError
     end
 
-    class VerificationMismatch < Instant2FAError
+    class VerificationMismatch < Instant2faError
     end
 
-    class VerificationFailed < Instant2FAError
+    class VerificationFailed < Instant2faError
     end
   end
 end

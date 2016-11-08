@@ -5,7 +5,7 @@ require "instant2fa/version"
 require "instant2fa/configuration"
 require "instant2fa/client"
 
-module Instant2FA
+module Instant2fa
   extend self
 
   def configure
@@ -16,7 +16,7 @@ module Instant2FA
     @config ||= Configuration.new
   end
 
-  def new(config=Instant2FA.config.dup, options={})
+  def new(config=Instant2fa.config.dup, options={})
     Client.new(config, options)
   end
 
@@ -27,3 +27,5 @@ module Instant2FA
   delegate(*Configuration.public_instance_methods(false), to: :config)
   delegate(*Client.public_instance_methods(false) - [:config], to: :client)
 end
+
+Instant2FA = Instant2fa

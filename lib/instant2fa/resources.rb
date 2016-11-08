@@ -1,6 +1,6 @@
 require 'json_api_client'
 
-module Instant2FA
+module Instant2fa
   class ConnectionConfiguration
   end
 

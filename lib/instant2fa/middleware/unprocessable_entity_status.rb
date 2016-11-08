@@ -8,7 +8,7 @@ module JsonApiClient::Errors
   end
 end
 
-module Instant2FA
+module Instant2fa
   module Middleware
     class UnprocessableEntityStatus < Faraday::Middleware
       def call(environment)

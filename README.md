@@ -1,4 +1,4 @@
-# Instant2FA
+# Instant2fa
 
 ## Installation
 
@@ -19,16 +19,16 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Instant2FA.configure do |config|
+Instant2fa.configure do |config|
   config.access_key = 'YOUR_ACCESS_KEY'
   config.access_secret = 'YOUR_ACCESS_SECRET'
 end
 
 distinct_id = "A_UNIQUE_ID_FOR_A_USER"
 
-hosted_page_url = Instant2FA.create_settings(distinct_id)
-hosted_page_url = Instant2FA.create_verification(distinct_id)
-verification_succeeded = Instant2FA.confirm_verification(distinct_id, token)
+hosted_page_url = Instant2fa.create_settings(distinct_id)
+hosted_page_url = Instant2fa.create_verification(distinct_id)
+verification_succeeded = Instant2fa.confirm_verification(distinct_id, token)
 ```
 
 ## Development
