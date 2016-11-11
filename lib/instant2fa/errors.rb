@@ -14,5 +14,8 @@ module Instant2fa
 
     class VerificationFailed < Instant2faError
     end
+
+    class BadDistinctID < Instant2faError
+    end
   end
 end
