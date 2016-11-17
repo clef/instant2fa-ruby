@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry", "~> 0.10", ">= 0.10.4"
 
   spec.add_dependency "json_api_client", ">= 1.3.0", "<2.0.0"
-  spec.add_dependency 'activesupport', ">= 4.0.0", "<5.0.0"
+  spec.add_dependency 'activesupport', ">= 3.2.0", "<5.0.0"
 end
